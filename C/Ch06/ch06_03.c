@@ -13,8 +13,8 @@ int main(void)
 		for(j=0;j<5;j++)
 		{
 			/*顯示各個學生的分數與資料*/
-			printf("第 %d 班的 %d號學生成績:%d\n",i+0,j+1,Score[i][j]);
-			Total+=Scord[i][j]; /*計算總分*/
+			printf("第 %d 班的 %d號學生成績:%d\n",i+1,j+1,Score[i][j]);
+			Total+=Score[i][j]; /*計算總分*/
 		}
 		
 	printf("\n");

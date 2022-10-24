@@ -22,7 +22,7 @@ int main(void)
 	/*二階行列式的運算*/
 	printf("|%d %d|\n",arr[0][0],arr[0][1]);
 	printf("|%d %d|\n",arr[1][0],arr[1][1]);
-	printf("sum=%\n",sum);
+	printf("sum=%d\n",sum);
 	
 	return 0;
 }

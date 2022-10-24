@@ -17,9 +17,9 @@ int main(void)
 	printf("--------------------\n");
 	for(i=0;i<3;i++)
 	{
-		printf("%s\t%d\t%d\t%d\t%d",name[i],score[i][0],score[i][1],score[i][2]);
+		printf("%s\t%d\t%d\t%\t%d",name[i],score[i][0],score[i][1],score[i][2]);
 		total=score[i][0]+score[i][1]+score[i][2];
-		printf("\t%d\n",total)/*輸出三科的總分*/
+		printf("\t%d\n",total);/*輸出三科的總分*/
 	}
 	printf("--------------------\n");
 	

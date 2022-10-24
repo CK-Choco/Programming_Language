@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (j=0;j<i;j++)/*ゑ耕ユ传Ω计*/ 
 		{
-			for(data[j]>data[j+1])/*ゑ耕綟ㄢ计材计耕玥ユ传*/ 
+			if(data[j]>data[j+1])/*ゑ耕綟ㄢ计材计耕玥ユ传*/ 
 			{
 				tmp=data[i];
 				data[j]=data[j+1];/*ユ传抖*/ 
