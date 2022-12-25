@@ -16,6 +16,7 @@ int main (int argc, char** argv)
 		case 'B':
 		case 'b':
 			printf("Exit...");
+			system("cd ../&start ¿ï³æ.exe&exit");
 			break;
 		case 'o':
 		case 'O':

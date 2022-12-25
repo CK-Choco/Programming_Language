@@ -10,11 +10,11 @@ void color(short x){
     else//默認白色
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);}
 int main(){
-	system("title 猜拳遊戲");
     char gamer; // 玩家出拳
     int computer; // 電腦出拳
     int result; // 比賽結果
     while (1){// 為了避免玩一次遊戲就退出程序，可以將代碼放在循環中
+    	system("title 猜拳遊戲");
         color(10);printf("這是一個猜拳的小遊戲，請輸入你要出的拳頭：\n");
         color(6);printf("A:剪刀\nB:石頭\nC:布\nD:不玩了\n");color(7);
         scanf("%c%*c",&gamer);
@@ -34,7 +34,6 @@ int main(){
             case 'D':
             case 'd':
             	system("timeout /t 5");//倒數計時，任一鍵跳過 
-            	system("cd ../&start 選單.exe&exit");
                 return 0;
             default:
                 printf("你的選擇為%c 選擇錯誤,退出...\n",gamer);
@@ -57,12 +56,15 @@ int main(){
             case 10:printf("布\n");break;}
         if (result==6||result==7||result==11){
         	color(6);printf("你贏了!");color(7);
+        	system("title 猜拳遊戲-#玩家獲勝");
         	system("start win.vbs");}
         else if (result==5||result==9||result==10){
 			color(9);printf("電腦贏了!");color(7);
+			system("title 猜拳遊戲-#電腦獲勝");
 			system("start lose.vbs");}
         else {
 			printf("平手");
+			system("title 猜拳遊戲-#平局");
 			system("start tie.vbs");}
         system("pause>nul&&cls"); /*暫停並清屏*/}
     return 0;

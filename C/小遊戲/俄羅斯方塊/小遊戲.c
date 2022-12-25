@@ -149,6 +149,7 @@ void start_game()
                     gotoxy(FACE_X / 2, FACE_Y);
                     printf("按任意鍵退出!\n");
                     getch();
+                    system("cd ../&start 選單.exe");
                     exit(0);
                     break;
                 }
@@ -265,8 +266,7 @@ int del()
             if (n == 'n' || n == 'N')
             {
                 gotoxy(FACE_X / 2 + 4, 2 * (FACE_Y / 3));
-                printf("按任意鍵退出游戲！");
-                exit(0);
+                system("cd ../&start 選單.exe&exit");
             }
             else if (n == 'y' || n == 'Y')
                 main();
