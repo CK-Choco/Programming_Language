@@ -10,11 +10,11 @@ void color(short x){
     else//默認白色
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);}
 int main(){
+	system("title 猜拳遊戲");
     char gamer; // 玩家出拳
     int computer; // 電腦出拳
     int result; // 比賽結果
     while (1){// 為了避免玩一次遊戲就退出程序，可以將代碼放在循環中
-    	system("title 猜拳遊戲");
         color(10);printf("這是一個猜拳的小遊戲，請輸入你要出的拳頭：\n");
         color(6);printf("A:剪刀\nB:石頭\nC:布\nD:不玩了\n");color(7);
         scanf("%c%*c",&gamer);
@@ -34,6 +34,7 @@ int main(){
             case 'D':
             case 'd':
             	system("timeout /t 5");//倒數計時，任一鍵跳過 
+            	system("cd ../&start game-menu.exe&exit");
                 return 0;
             default:
                 printf("你的選擇為%c 選擇錯誤,退出...\n",gamer);
@@ -44,28 +45,25 @@ int main(){
         srand((unsigned)time(NULL)); // 隨機數種子
         computer=rand()%3; // 產生隨機數並取餘，得到電腦出拳
         result=(int)gamer+computer; // gamer 為char 類型，數學運算時要強制轉換類型
-        printf("電腦出了\n");
+        printf("電腦出了");
         switch (computer){
-            case 0:printf("剪刀\n");break;
-            case 1:printf("石頭\n");break;
-            case 2:printf("布\n");break;}
-        printf("你出了\n");
+            case 0:printf("剪刀\n");break; //4 1
+            case 1:printf("石頭\n");break; //7 2
+            case 2:printf("布\n");break; /*10 3*/}
+        printf("你出了");
         switch (gamer){
             case 4:printf("剪刀\n");break;
             case 7:printf("石頭\n");break;
             case 10:printf("布\n");break;}
         if (result==6||result==7||result==11){
         	color(6);printf("你贏了!");color(7);
-        	system("title 猜拳遊戲-#玩家獲勝");
         	system("start win.vbs");}
         else if (result==5||result==9||result==10){
 			color(9);printf("電腦贏了!");color(7);
-			system("title 猜拳遊戲-#電腦獲勝");
 			system("start lose.vbs");}
         else {
 			printf("平手");
-			system("title 猜拳遊戲-#平局");
 			system("start tie.vbs");}
-        system("pause>nul&&cls"); /*暫停並清屏*/}
+        system("cls"); /*暫停並清屏*/}
     return 0;
 }
