@@ -1,0 +1,21 @@
+>裝置
+adb devices
+>連接
+scrcpy
+>安裝
+adb install <apk檔>
+>啟用
+adb shell pm enable <package_name>
+>禁用
+adb shell pm disable-user <package_name>
+>移除
+adb shell pm uninstall -k --user 0 <package_name>
+>無待機
+adb shell settings put system screen_off_timeout 2147483647
+(15000=15s)
+>無休眠
+adb shell svc power stayon true 
+(false解除)
+
+
+
