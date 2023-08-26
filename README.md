@@ -1,7 +1,7 @@
 # Programming Language - 程式語言
-[C](C)/[C++](C++)
-[Command]Command
-[HTML]HTML
-[Java]Java
-[Python]Python
-[VBScript]VBScript
+[C](C)/[C++](C++) \n
+[Command](Command) \n
+[HTML](HTML) \n
+[Java](Java) \n
+[Python](Python) \n
+[VBScript](VBScript) \n
