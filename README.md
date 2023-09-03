@@ -4,5 +4,7 @@
 > [Command](Command)  
 > [HTML](HTML)  
 > [Java](Java)  
+> [Perl](Perl)
 > [Python](Python)  
 > [VBScript](VBScript)  
+
