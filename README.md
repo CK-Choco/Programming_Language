@@ -6,6 +6,6 @@
 > [Java](Java)  
 > [Perl](Perl)  
 > [Python](Python)  
-> [VBScript](VBScript)
+> [VBScript](VBScript)  
 > [MIT_APP_Inventor2](MitAppInventor2)  
 
