@@ -7,5 +7,5 @@
 > [Perl](Perl)  
 > [Python](Python)  
 > [VBScript](VBScript)  
-> [MIT_APP_Inventor2](MitAppInventor2)  
+> [MitAppInventor2](MIT_APP_Inventor2)  
 
