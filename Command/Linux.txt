@@ -1,4 +1,0 @@
-代碼雨
-cmatrix
-系統圖示與硬體資訊
-neofetch

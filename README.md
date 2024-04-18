@@ -1,11 +1,12 @@
-# Programming Language - 程式語言
+### Programming Language - 程式語言
+#
+### Microsoft
 > [Bat](Bat)  
 > [C](C)/[C++](C++)  
-> [Command](Command)  
+> [VBScript](VBScript)  
+#
+### 第三方語言
 > [HTML](HTML)  
 > [Java](Java)  
 > [Perl](Perl)  
-> [Python](Python)  
-> [VBScript](VBScript)  
-> [MitAppInventor2](MIT_APP_Inventor2)  
-
+> [Python](Python) 
