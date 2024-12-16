@@ -9,5 +9,5 @@
 > [HTML](HTML)  
 > [Java](Java)  
 > [Perl](Perl)  
-> [Python](Python) 
-> [Arduino](Arduino) 
+> [Python](Python)  
+> [Arduino](Arduino)  
