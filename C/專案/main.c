@@ -2,12 +2,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <windows.h>
+
 //场だ砰э肅︹ 
 void color(short x){
     if (x >= 0 && x <= 15)//把计0-15絛瞅肅︹ 
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), x);	//Τ把计э跑砰肅︹ 
     else//纐粄フ︹
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);}
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+}
+
 int main(vold)
 {
 	char m='a';
