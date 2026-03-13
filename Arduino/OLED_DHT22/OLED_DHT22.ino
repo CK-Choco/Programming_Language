@@ -56,6 +56,6 @@ void OLED_Output(float temperature, float humidity){
   u8g2.firstPage();
   do {
     u8g2.setCursor(0, 30); u8g2.print("溫度"); u8g2.setCursor(29, 30); u8g2.print("|"); u8g2.setCursor(37, 30); u8g2.print(temperature, 1);u8g2.setCursor(80, 30); u8g2.print("± 3"); 
-    u8g2.setCursor(0, 50); u8g2.print("濕度"); u8g2.setCursor(29, 53); u8g2.print("|"); u8g2.setCursor(37, 50); u8g2.print(humidity, 1); u8g2.setCursor(80, 50); u8g2.print("± 0.5"); 
+    u8g2.setCursor(0, 53); u8g2.print("濕度"); u8g2.setCursor(29, 53); u8g2.print("|"); u8g2.setCursor(37, 53); u8g2.print(humidity, 1); u8g2.setCursor(80, 53); u8g2.print("± 0.5"); 
     }while (u8g2.nextPage());
 }
