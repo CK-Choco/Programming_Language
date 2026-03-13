@@ -16,6 +16,7 @@ int pinDHT22 = 13;  //濕溫度連接 ESP32 pin 13
 SimpleDHT22 dht22(pinDHT22);
 
 void setup() {
+  Wire.begin(22, 21);
   u8g2.begin();
   u8g2.enableUTF8Print();  //啟用UTF8文字的功能
   Serial.begin(115200);
@@ -50,6 +51,7 @@ void Debug(float temperature, float humidity){
 }
 
 void OLED_Output(float temperature, float humidity){
+  Serial.println("畫面輸出");
   u8g2.setFont(u8g2_font_unifont_t_chinese1); // 設置字型
   u8g2.firstPage();
   do {
