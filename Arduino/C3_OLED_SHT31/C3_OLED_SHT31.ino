@@ -52,12 +52,14 @@ void loop() {
   float heatIndex = temperature + (humidity * 0.1);
   heatIndex = round(heatIndex * 10.0) / 10.0;
 
-  // 根據熱指數判斷狀態字串（綠 / 黃 / 紅）
+  // 根據熱指數判斷狀態字串（綠 / 黃 / 橘 / 紅）
   String statusStr = "";
-  if (heatIndex < 32.0) {
+  if (heatIndex < 32.2) {
     statusStr = "綠";
-  } else if (heatIndex < 41.0) {
+  } else if (heatIndex >= 32.2 && heatIndex < 40.6) {
     statusStr = "黃";
+  } else if (heatIndex >= 40.6 && heatIndex < 54.4) {
+    statusStr = "橘";
   } else {
     statusStr = "紅";
   }
@@ -68,7 +70,7 @@ void loop() {
     // 設置中文字型
     u8g2.setFont(u8g2_font_unifont_t_chinese1); 
 
-    // 1. 第一行：固定顯示「熱指數 XX.X 綠/黃/紅」
+    // 1. 第一行：固定顯示「熱指數 XX.X 綠/黃/橘/紅」
     u8g2.setCursor(5, 20); u8g2.print(statusStr);
     u8g2.setCursor(18, 20); u8g2.print("|");
     u8g2.setCursor(26, 20); u8g2.print("熱指數");
